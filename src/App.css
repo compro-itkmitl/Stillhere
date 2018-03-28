@@ -1,11 +1,51 @@
-.App {
+.Logo {
   text-align: center;
-  font-size: 3em;
-  color: white;
+  margin-top: 6em;
+  margin-left: 1px;
+  animation-name: fade-up;
+  animation-duration: 2s;
 }
 
-.Timer {
+.Main {
+  animation-name: fade-up;
+  animation-duration: 2s;
+}
+
+h1 {
   text-align: center;
-  font-size: 3em;
+  font-size: 180px;
   color: white;
+  margin: 0em;
+  margin-left: 20px;
+}
+h2 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin-top: 3em;
+}
+
+h3 {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  margin: 0.5em;
+}
+
+h4 {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  margin: 0em;
+}
+
+@keyframes fade-up {
+  0% {  
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
 }
