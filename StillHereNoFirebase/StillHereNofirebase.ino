@@ -10,40 +10,31 @@ SoftwareSerial ArduinoSerial(9, 8); //RX || TX
 
 
 void setup() {
-  Serial.begin(9600);
-  pinMode(6, OUTPUT); // output buzzer
+  Serial.begin(115200);
+  //pinMode(6, OUTPUT); // output buzzer
   ArduinoSerial.begin(4800);
 }
 
 void loop() {
-  While (ArduinoSerial.available() > 0){
+  while (ArduinoSerial.available() > 0){
     float val = ArduinoSerial.parseFloat();
-    if (ArduinoSerial.read()) == '\n'){
-      Serial.println(var);
+    if (ArduinoSerial.read() == '\n'){
+      Serial.println(val);
     }
   }
-  delay(100)
-  /*distance1 = ultrasonic1.distanceRead(); //distanceRead is return cm
+  delay(100);
+  distance1 = ultrasonic1.distanceRead(); //distanceRead is return cm
   distance2 = ultrasonic2.distanceRead(); //distanceRead is return cm
-  if (distance1 > 7 && distance2 > 7 ) {
-    Serial.print("Yes");
-    Serial.println();
-  if (distance1 > 7 && distance2 > 7 ){
-    Serial.println("Yes");
-  }
-  else {
-    Serial.println("No");
-  }
-  Serial.println(distance1);
-  if (distance1 < 5 ){
+  if (distance1 > 5 && distance2 > 10 ){
+    if (distance1 < 5 ){
     beep(distance1);
-  }
-  
-  else{
-  digitalWrite(6, HIGH);
-  }*/
+    }
+    else{
+    digitalWrite(6, HIGH);
+    }
+  }  
 }
-/*
+
 void beep(int distance) {
  
   beepCount += 5; //delay sound
@@ -53,4 +44,4 @@ void beep(int distance) {
   }else if(beepCount > 100){
     digitalWrite(6, HIGH);
   }
-}*/
+}

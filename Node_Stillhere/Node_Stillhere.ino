@@ -3,10 +3,13 @@
 const char* ssid = "Nontakorn"; //ชื่อ WIFI
 const char* password = "nootwainon"; // Password ของ WIFI
 SoftwareSerial NodeSerial(D2, D3); //RX | TX
+#define FIREBASE_HOST "comproiot.firebaseio.com"
+#define FIREBASE_AUTH "UktGd4fGZ6JSA3chsZdrFGKcq5ObLCaomdXXd7eB"
+
+
 void setup()
 {
   Serial.begin(115200);
-  delay(10);
   Serial.print("Connecting to "); 
   Serial.println(ssid); //แสดงข้อความ ชื่อ WIFI
  
@@ -25,6 +28,8 @@ void setup()
   pinMode(D2, INPUT);
   pinMode(D3, OUTPUT);
   NodeSerial.begin(4800);
+
+  Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
 }
 
 void loop() {
