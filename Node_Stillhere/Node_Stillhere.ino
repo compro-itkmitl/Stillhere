@@ -1,5 +1,6 @@
 #include <ESP8266WiFi.h>
 #include <SoftwareSerial.h>
+#include <FirebaseArduino.h>
 const char* ssid = "Nontakorn"; //ชื่อ WIFI
 const char* password = "nootwainon"; // Password ของ WIFI
 SoftwareSerial NodeSerial(D2, D3); //RX | TX
@@ -36,4 +37,5 @@ void loop() {
   NodeSerial.print(10);
   NodeSerial.print("\n");
   delay(100);
+  Firebase.setBool("A01/status",true);
 }
