@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <SoftwareSerial.h>
 #include <FirebaseArduino.h>
-#define ssid "POK Have A Sixpack" //ชื่อ WIFI
-#define password "0870614656" // Password ของ WIFI
+const char* ssid = "leelapvw"; //ชื่อ WIFI
+const char* password = "jh4331kp"; // Password ของ WIFI
 SoftwareSerial NodeSerial(D2, D3); //RX | TX
 #define FIREBASE_HOST "comproiot.firebaseio.com"
 #define FIREBASE_AUTH "UktGd4fGZ6JSA3chsZdrFGKcq5ObLCaomdXXd7eB"
@@ -11,21 +11,38 @@ SoftwareSerial NodeSerial(D2, D3); //RX | TX
 void setup()
 {
   Serial.begin(115200);
+  Serial.print("Connecting to "); 
+  Serial.println(ssid); //แสดงข้อความ ชื่อ WIFI
+ 
   WiFi.begin(ssid, password);
-  Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
+  
+  while (WiFi.status() != WL_CONNECTED)
+  {
+    delay(500);
+    Serial.print("*");
+  }
+  Serial.println("");
+  Serial.println("WiFi connected");
+  Serial.println("IP address: ");
+  Serial.println(WiFi.localIP());
+
   pinMode(D2, INPUT);
   pinMode(D3, OUTPUT);
   NodeSerial.begin(4800);
+
+  Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
 }
 
 void loop() {
-  int i;
-  NodeSerial.print(10);
-  NodeSerial.print("\n");
-  delay(100);
-  // Firebase.setBool("A01/status",true); คำสั่ง Set Boolean ให้ Firebase
-  /*for(i=0;i<10;i++){
-      delay(1000);
-      Serial.println(i);
-    } ใช้ Delay ช่วยในการนับเวลา */ 
+  while (NodeSerial.available() > 0 {
+    float val = NodeSerial.parseFloat();
+    if(NodeSerial.read() == '\n'){
+      if(val == 1){ // status 1 = True
+        Firebase.setBool("A01/status",true);
+      }
+      else{
+        Firebase.setBool("A01/status",false);
+      }
+    }
+  }
 }
