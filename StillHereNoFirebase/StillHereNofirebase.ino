@@ -11,26 +11,23 @@ SoftwareSerial ArduinoSerial(9, 8); //RX || TX
 
 void setup() {
   Serial.begin(115200);
-  //pinMode(6, OUTPUT); // output buzzer
+  pinMode(6, OUTPUT); // output buzzer
   ArduinoSerial.begin(4800);
 }
 
 void loop() {
-  while (ArduinoSerial.available() > 0){
-    float val = ArduinoSerial.parseFloat();
-    if (ArduinoSerial.read() == '\n'){
-      Serial.println(val);
-    }
-  }
-  delay(100);
+ 
   distance1 = ultrasonic1.distanceRead(); //distanceRead is return cm
   distance2 = ultrasonic2.distanceRead(); //distanceRead is return cm
   if (distance1 > 5 && distance2 > 10 ){
     if (distance1 < 5 ){
-    beep(distance1);
+      beep(distance1);
+      ArduinoSerial.print(1); // status 1 = True
+      ArduinoSerial.print("\n");
     }
     else{
-    digitalWrite(6, HIGH);
+      digitalWrite(6, HIGH);
+      ArduinoSerial.print(0); // status 0 = False
     }
   }  
 }
@@ -45,3 +42,4 @@ void beep(int distance) {
     digitalWrite(6, HIGH);
   }
 }
+
