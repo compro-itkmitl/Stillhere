@@ -2,8 +2,8 @@
 #include <SoftwareSerial.h>
 #include <FirebaseArduino.h>
 
-#define ssid "leelapvw" //ชื่อ WIFI
-#define password "jh4331kp" // Password ของ WIFI
+#define ssid "Mi Phone." //ชื่อ WIFI
+#define password "002007le" // Password ของ WIFI
 SoftwareSerial NodeSerial(D2, D3); //RX | TX
 #define FIREBASE_HOST "comproiot.firebaseio.com"
 #define FIREBASE_AUTH "UktGd4fGZ6JSA3chsZdrFGKcq5ObLCaomdXXd7eB"
@@ -20,8 +20,10 @@ void setup()
 }
 
 void loop() {
-  while (NodeSerial.available() > 0 {
-    float val = NodeSerial.parseFloat();
+  Firebase.setBool("test",true);
+  while (NodeSerial.available() > 0 ) {
+    int val = NodeSerial.parseInt();
+    Serial.println(val);
     if(NodeSerial.read() == '\n'){
       if(val == 1){ // status 1 = True
         Firebase.setBool("A01/status",true);

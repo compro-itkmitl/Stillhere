@@ -8,11 +8,11 @@ double beepCount;
 
 SoftwareSerial ArduinoSerial(9, 8); //RX || TX
 
-
 void setup() {
   Serial.begin(115200);
   pinMode(6, OUTPUT); // output buzzer
   ArduinoSerial.begin(4800);
+  digitalWrite(6, HIGH);
 }
 
 void loop() {
@@ -22,7 +22,7 @@ void loop() {
   if (distance1 < 7 && distance2 < 10 ){
       ArduinoSerial.print(1); // status 1 = True
       ArduinoSerial.print("\n");
-      if(distance1 < 5){
+      if(distance1 <= 5){
         beep(distance1);
         }
        else{
@@ -34,8 +34,7 @@ void loop() {
       ArduinoSerial.print(0); // status 0 = False
       ArduinoSerial.print("\n");
     }
-  }  
-}
+  }
 
 void beep(int distance) {
  
