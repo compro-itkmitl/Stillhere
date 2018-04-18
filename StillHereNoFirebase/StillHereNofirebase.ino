@@ -19,20 +19,24 @@ void loop() {
  
   distance1 = ultrasonic1.distanceRead(); //distanceRead is return cm
   distance2 = ultrasonic2.distanceRead(); //distanceRead is return cm
-  if (distance1 < 7 && distance2 < 10 ){
-      ArduinoSerial.print(1); // status 1 = True
-      ArduinoSerial.print("\n");
-      if(distance1 <= 5){
+  if (distance1 < 7 && distance2 < 15 ){
+    if(distance1 <= 5){
         beep(distance1);
         }
        else{
         digitalWrite(6, HIGH);
         }
+      delay(1000);
+      ArduinoSerial.print(1); // status 1 = True
+      ArduinoSerial.print("\n");
+      Serial.println(1);
     }
   else{
       digitalWrite(6, HIGH);
-      ArduinoSerial.print(0); // status 0 = False
+      delay(1000);
+      ArduinoSerial.print(2); // status 2 = False
       ArduinoSerial.print("\n");
+      Serial.println(2);
     }
   }
 
