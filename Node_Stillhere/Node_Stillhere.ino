@@ -27,6 +27,7 @@ void loop() {
       if(val == 2){
         Firebase.setBool("A01/status",false);
         count = 0;
+        hour = 0;
       }
       if(val == 1){ // status 1 = True
         Firebase.setBool("A01/status",true);
