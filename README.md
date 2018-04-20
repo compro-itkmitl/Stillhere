@@ -49,10 +49,15 @@
 ![](/Resource/step6.gif)
 
 ---
-## Author
-* 60070087 : Warit Kanbunjob
-* 60070098 : Supakit Theanthunyakit
-* 60070104 : Suthathip Srikosapala
+
+# ![](/Resource/Supervisor.png) Assistant Teacher
+|ผศ. ดร. กิติ์สุชาติ พสุภา|ผศ. ดร. ปานวิทย์ ธุวะนุติ|
+|:-:|:-:|
+|![](/Resource/Aj.%20Oong.png)|![](/Resource/Aj.%20Panwit.png)|
+
+รายงานนี้เป็นส่วนหนึ่งของวิชา Computer Programming (รหัส 06016206)
+
+คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
 
 ---
 
