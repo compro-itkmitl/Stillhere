@@ -6,7 +6,7 @@
 * ESP8266WiFi Library http://arduino-esp8266.readthedocs.io
 * Firebase Arduino https://github.com/firebase/firebase-arduino
 * Minimalist library for Ultrasonic Module https://github.com/ErickSimoes/Ultrasonic 
-* SoftwareSerial https://github.com/PaulStoffregen/SoftwareSerial
+* SoftwareSerial Library https://github.com/PaulStoffregen/SoftwareSerial
 
 # ![](/Resource/Help.png) How to use
 
