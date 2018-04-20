@@ -20,7 +20,7 @@
 
 2.เมื่อผู้ใช้เข้าจอดรถ จำนวนที่จอดรถที่แสดงอยู่ในหน้่าเว็บจะลดลง
 
-![](/Resource/step2.jpg)
+![](/Resource/step2.gif)
 
 ## Author
 * 60070087 : Warit Kanbunjob
