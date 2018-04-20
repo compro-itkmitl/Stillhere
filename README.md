@@ -18,6 +18,10 @@
 
 ---
 
+2.เมื่อผู้ใช้เข้าจอดรถ จำนวนที่จอดรถที่แสดงอยู่ในหน้่าเว็บจะลดลง
+
+![](/Resource/step2.jpg)
+
 ## Author
 * 60070087 : Warit Kanbunjob
 * 60070098 : Supakit Theanthunyakit
