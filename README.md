@@ -9,8 +9,11 @@
 * SoftwareSerial https://github.com/PaulStoffregen/SoftwareSerial
 
 # ![](/Resource/Help.png) How to use
+
 สำหรับวิธีการใช้งานนะครับ ขั้นตอนแรกผู้ใช้ต้องเข้าไปที่เว็บ https://comproiot.firebaseapp.com/ เพื่อดูว่าชั้นที่เราต้องการจะจอดมีที่ว่างไหม 
-![](/Resource/step1.png)
+
+![](/Resource/step1.jpg)
+
 ---
 
 ## Author
