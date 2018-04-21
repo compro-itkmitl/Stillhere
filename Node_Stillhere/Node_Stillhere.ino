@@ -26,6 +26,7 @@ void loop() {
     if(NodeSerial.read() == '\n'){
       if(val == 2){
         Firebase.setBool("A01/status",false);
+        Firebase.setString("A01/time_in","0");
         count = 0;
         hour = 0;
       }
@@ -33,7 +34,7 @@ void loop() {
         Firebase.setBool("A01/status",true);
         count += 1;
         Serial.println(count);
-        if(count%10 == 0){
+        if(count%60 == 0){
           count = 0;
           hour += 1;
           Firebase.setInt("A01/duration",hour);
