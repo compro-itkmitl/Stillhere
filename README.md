@@ -49,7 +49,7 @@
 |:-:|--|------|---------------|---------|
 |![https://www.facebook.com/wai.waritkanbunjob](/Resource/wai.jpg)|Warit|Kanbunjob|[@waiwarit](https://github.com/WaiWarit)|60070087|
 |![https://www.facebook.com/profile.php?id=100002495318131](/Resource/pok.jpg)|Supakit|Theanthunyakit|[@POKINBKK](https://github.com/POKINBKK)|60070098|
-|![https://www.facebook.com/shipshipshipshipshipship](/Resource/eve2.jpg)|Suthatip|Srikosapala|[@yves99](https://github.com/yves99)|60070104|
+|![https://www.facebook.com/shipshipshipshipshipship](/Resource/eve.jpg)|Suthatip|Srikosapala|[@yves99](https://github.com/yves99)|60070104|
 
 ---
 
