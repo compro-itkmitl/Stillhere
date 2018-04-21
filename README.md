@@ -7,6 +7,7 @@ Hardware
 * NodeMCU
 * Ultrasonic Module
 * Buzzer Module
+
 Web-Appiclation
 * React
 * Firebase
