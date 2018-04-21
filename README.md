@@ -16,7 +16,7 @@ Web-Application
 * React
 * Firebase
 
-## Library in Use
+##  ![](/Resource/dash.png) Library in Use
 
 * ESP8266WiFi Library http://arduino-esp8266.readthedocs.io
 * Firebase Arduino https://github.com/firebase/firebase-arduino
