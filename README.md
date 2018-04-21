@@ -8,7 +8,7 @@ Hardware
 * Ultrasonic Module
 * Buzzer Module
 
-Web-Appiclation
+Web-Application
 * React
 * Firebase
 
