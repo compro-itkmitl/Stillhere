@@ -24,7 +24,7 @@
 
 ---
 
-3.เมื่อผู้ใช้จอดรถเสร็จแล้ว ก็สามารถกรอกตำแหน่งที่จอดรถลงในเว็บ https://comproiot.firebaseapp.com/ พอดีรายละเอียดต่างๆ
+3.เมื่อผู้ใช้จอดรถเสร็จแล้ว ก็สามารถกรอกตำแหน่งที่จอดรถลงในเว็บ https://comproiot.firebaseapp.com/ พอดูรายละเอียดต่างๆ
 
 ![](/Resource/step3.jpg)
 
@@ -41,6 +41,15 @@
 
 
 ![](/Resource/step5.gif)
+
+---
+
+# ![](/Resource/Person.png) Team Members
+|  |ชื่อ|นามสกุล|GitHub Username|รหัสนักศึกษา|
+|:-:|--|------|---------------|---------|
+|![https://www.facebook.com/wai.waritkanbunjob](/Resource/wai.jpg)|Warit|Kanbunjob|[@waiwarit](https://github.com/WaiWarit)|60070087|
+|![https://www.facebook.com/profile.php?id=100002495318131](/Resource/pok.jpg)|Supakit|Theanthunyakit|[@POKINBKK](https://github.com/POKINBKK)|60070098|
+|![https://www.facebook.com/shipshipshipshipshipship](/Resource/eve2.jpg)|Suthatip|Srikosapala|[@yves99](https://github.com/yves99)|60070104|
 
 ---
 
