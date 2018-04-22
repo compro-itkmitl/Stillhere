@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee');
+
+.card{
+    border-bottom: 1px solid white;
+    text-align: center;
+    height: 33px;
+    width: 300px;
+    border-width: 3px; 
+    display: block;
+    padding-top: 0em;
+    margin: 0 auto;
+    margin-top: -3em;
+}
+
+h4 {
+    font-size: 2.5em;
+    margin: 0.5em;
+}
+
+.Form{
+    text-align: center;
+}
+
+.Input {
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 1em;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    display: block;
+    border: 3px solid #bcbcbc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'ABeeZee', sans-serif;
+
+}
+
+.Input:focus {
+    border: 3px solid #3d3d3d;
+    border-radius: 8px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.Button{
+    width: 100%;
+    background-color: #f9f9f9;
+    color: #515151;
+    padding: 14px 13px;
+    width: 100px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'ABeeZee', sans-serif;
+
+}
+
+.Button :hover{
+    width: 100%;
+    background-color: #f9f9f9;
+    color: #515151;
+    padding: 14px 20px;
+    width: 20%;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px black;
+}
+
+.Head {
+    font-size: 0.5em;
+}
+
+img {
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 3em;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+Table {
+    margin: 0 auto;
+    font-size: 100%;
+    color: white;
+}
+
+td {
+    font-size: 40px;
+    border: 2px solid white;
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+th {
+    border: 2px solid white;
+    width: 40%;
+    font-size: 30px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.Main {
+    animation-name: fade-up;
+    animation-duration: 1s;
+}
+
+@keyframes fade-up {
+    0% {  
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+

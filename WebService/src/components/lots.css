@@ -1,0 +1,116 @@
+h3 {
+    font-size: 1.7em;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 1em;
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    display: block;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 10em;
+    margin: 0 auto;
+    color: white;
+
+}
+
+h2 {
+    font-size: 1.7em;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 1em;
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    display: block;
+    color: white;
+}
+
+h4 {
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 1em;
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    display: block;
+    color: white;
+}
+
+.Button{
+    width: 100%;
+    background-color: #f9f9f9;
+    color: #515151;
+    padding: 14px 13px;
+    width: 100px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'ABeeZee', sans-serif;
+
+}
+
+.Button :hover{
+    width: 100%;
+    background-color: #f9f9f9;
+    color: #515151;
+    padding: 14px 20px;
+    width: 20%;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px black;
+}
+
+.loader {
+    margin: 0 auto;
+    margin-top: 15em;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #bbffae; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+.notfound{
+    font-size: 30px;
+    margin-top: 9em;
+    text-align: center;
+    color: white;
+    animation: fade 1s;
+}
+
+.Main {
+    animation-name: fade-up;
+    animation-duration: 1s;
+}
+
+@keyframes fade-up {
+    0% {  
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 100;}
+}
